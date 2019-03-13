@@ -127,6 +127,40 @@ void plusplustest() {
 	printf("%d", ++b);
 }
 
+void printf_array(int a[]) {
+	int n = sizeof(a) / sizeof(int);
+	printf();
+	for (int x = 0; x < n; x++) {
+		printf("%d\n", a[x]);
+	}
+}
+//一维数组
+void testarray() {
+	const int n = 10;//n是常量，才可以作为数组容量的大小初始化。
+	int a[PARAM];
+
+	/*
+		使用数组最好不要越界
+		编译错误
+		运行时错误，最不易发现
+	*/
+
+	//for循环对一位数组的赋值
+	for (int i = 0; i < 10; i++) {
+		a[i] = i + 1;
+	}
+
+	for (int i = 0; i < 10; i++) {
+		printf("%d\n",a[i]);
+	}
+
+	//将数组元素全部初始化为0
+	int b[10] = {0};
+	printf_array(b);
+}
+
+
+
 void main() {
 	//pointorname();
 
@@ -139,7 +173,10 @@ void main() {
 	//getchartest();
 	//putchartest();
 
-	plusplustest();
+	//plusplustest();
+
+	//一维数组
+	testarray();
 	getchar();
 	getchar();
 }
