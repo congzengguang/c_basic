@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(){
+int main1(){
         int a[10];
         for(int x=0;x<10;x++){
         printf("%d",a[x]);

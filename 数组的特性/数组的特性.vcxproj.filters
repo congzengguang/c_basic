@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello_world.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="数组不初始化值为随机数.c">
+    <ClCompile Include="数组的特性.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
