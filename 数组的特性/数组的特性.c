@@ -263,7 +263,7 @@ int main012() {
 /*
 	strncpy(dst,src,len);这个函数可以拷贝'\0' 但是'\0'后面的数据就无能为力了，也就是不可拷贝。
 */
-int main() {
+int main013() {
 	char src[100] = "hello c language";
 	char dst[100]="aaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 	strncpy(dst,src,strlen(src));
@@ -273,4 +273,27 @@ int main() {
 
 	getchar();
 	return 0;
+}
+/*
+	比较字符串的大小，
+*/
+int main014() {
+
+	char str1[] = "abc";
+	char str2[] = "abcd";
+	int flag = strcmp(str1, str2);
+	if (flag > 0) {
+		printf("str1 大于str2");
+	}
+	if (flag < 0) {
+		printf("str1 小于str2");
+	}
+	//如果打算比较前几个字符的话，用 strncmp();
+
+	getchar();
+	return 0;
+}
+
+int main() {
+	
 }
