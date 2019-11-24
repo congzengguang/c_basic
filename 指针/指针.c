@@ -329,8 +329,12 @@ int main015() {
 	static全局变量只能在当前文件使用。
 */
 
-int main016() {
-
+void main016() {
+	int a[2][2] = { {1,2},{3,4} };
+	printf("%p \n",a);
+	printf("%p \n",a+1);
+	//打印第一行第一个元素
+	printf("%d\n",*(a));
 }
 
 /*
@@ -341,7 +345,7 @@ int main016() {
 */
 
 int main() {
-
+	main016();
 	getchar();
 	return 0;
 }
